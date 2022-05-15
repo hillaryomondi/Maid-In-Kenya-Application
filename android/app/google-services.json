@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "449527671032",
+    "project_id": "maid-in-kenya-app",
+    "storage_bucket": "maid-in-kenya-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449527671032:android:1a9ba0839578c1ba8ab30d",
+        "android_client_info": {
+          "package_name": "hillary.co.ke.maidinkenya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449527671032-4rkg8uvjk6o487anfao50cb5d9ojah58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBYwJwdv86_bzBYYJ0xAKEsW1h_KEVhxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449527671032-4rkg8uvjk6o487anfao50cb5d9ojah58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
