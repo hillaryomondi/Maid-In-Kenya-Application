@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'Onboarding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +29,13 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Timer(Duration(seconds: 3), openOnBoard);
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
@@ -42,6 +52,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   DecorationImage(image: AssetImage('asset/images/logo.png'))),
         )),
       ),
+    );
+  }
+
+  void openOnBoard() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Onboarding()),
     );
   }
 }
