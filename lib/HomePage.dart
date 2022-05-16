@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:maidinkenya/OrderPage.dart';
 import 'StyleScheme.dart';
 
 class HomePage extends StatelessWidget {
@@ -24,12 +25,16 @@ class _homePageState extends State<homePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
+          color: Colors.grey,
           icon: Icon(Icons.arrow_back_ios),
-          onPressed: () {},
+          onPressed: () {
+            print("Back Button pressed");
+          },
         ),
         title: Text(
           "MAID IN KENYA",
@@ -37,18 +42,21 @@ class _homePageState extends State<homePage> {
         ),
         actions: [
           IconButton(
+            color: Colors.grey,
             icon: Icon(Icons.notifications),
-            onPressed: () {},
+            onPressed: () {
+              print("Notifications button pressed");
+            },
           )
         ],
       ),
-      body: Container(
+      body: SingleChildScrollView(
         padding: EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 200,
+              height: 150,
               width: MediaQuery.of(context).size.width,
               color: Color(0xfff1ffff),
               child: Stack(
@@ -63,11 +71,11 @@ class _homePageState extends State<homePage> {
                         children: [
                           Text("BLESS THIS MESS", style: headingStyle),
                           SizedBox(
-                            height: 5,
+                            height: 4,
                           ),
                           Text(
                             "We Pick your clothes and give \n them a new look",
-                            style: TextStyle(fontSize: 16),
+                            style: TextStyle(fontSize: 14),
                           ),
                         ],
                       ),
@@ -77,8 +85,8 @@ class _homePageState extends State<homePage> {
                       bottom: 0,
                       right: 0,
                       child: Container(
-                        height: 180,
-                        width: 180,
+                        height: 150,
+                        width: 140,
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 image:
@@ -88,14 +96,14 @@ class _homePageState extends State<homePage> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 6,
             ),
             Text(
               "SERVICES",
               style: headingStyle,
             ),
             Container(
-              height: 200,
+              height: 150,
               color: Color(0xfff1ffff),
               child: Row(
                 children: [
@@ -118,7 +126,7 @@ class _homePageState extends State<homePage> {
                           height: 10,
                         ),
                         InkWell(
-                          onTap: () {},
+                          onTap: openOrderPage,
                           child: Container(
                             decoration: BoxDecoration(
                               gradient: gradientStyle,
@@ -171,7 +179,7 @@ class _homePageState extends State<homePage> {
               ),
             ),
             SizedBox(
-              height: 10,
+              height: 8,
             ),
             Container(
               padding: EdgeInsets.all(20),
@@ -185,7 +193,7 @@ class _homePageState extends State<homePage> {
                     style: contentStyle,
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 8,
                   ),
                   Text(
                     "You can check time estimation with price",
@@ -211,6 +219,35 @@ class _homePageState extends State<homePage> {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Colors.orange,
+        iconSize: 30,
+        onTap: (value) => {},
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.track_changes),
+            label: "Track Order",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.view_list),
+            label: "My orders",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.contacts),
+            label: "Profile",
+          ),
+        ],
+      ),
     );
+  }
+
+  void openOrderPage() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => OrderPage()));
   }
 }
