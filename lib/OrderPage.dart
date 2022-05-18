@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:maidinkenya/PickUpTimePage.dart';
 import 'package:maidinkenya/StyleScheme.dart';
 
 class OrderPage extends StatelessWidget {
@@ -102,7 +103,10 @@ class _orderPageState extends State<orderPage> {
               height: 10,
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => PickUpTimePage()));
+              },
               child: Container(
                 padding: EdgeInsets.all(20),
                 height: 70,
