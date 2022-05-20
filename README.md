@@ -1,5 +1,5 @@
 
-A new Flutter project.
+A flutter peoject that allows customers easy and convenient access to laundry services.
 
 ## Getting Started
 
