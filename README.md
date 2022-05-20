@@ -16,14 +16,14 @@ samples, guidance on mobile development, and a full API reference.
 
 Screenshots
 
-<img src="https://user-images.githubusercontent.com/33893807/169170020-80ac2532-78f0-42d2-aa16-00ea165f9b9e.jpg" height="100">
+<img src="https://user-images.githubusercontent.com/33893807/169170020-80ac2532-78f0-42d2-aa16-00ea165f9b9e.jpg" height="100" width="100">
 
 
-<img src="https://user-images.githubusercontent.com/33893807/169170045-19481dbe-2728-40b0-8bac-2cc08174d747.jpg" height="100">
+<img src="https://user-images.githubusercontent.com/33893807/169170045-19481dbe-2728-40b0-8bac-2cc08174d747.jpg" height="100" width="100">
 
-<img src="https://user-images.githubusercontent.com/33893807/169170064-5ea9939c-71bb-4fcc-86f4-f014b6c3d9d0.jpg" height="100">
+<img src="https://user-images.githubusercontent.com/33893807/169170064-5ea9939c-71bb-4fcc-86f4-f014b6c3d9d0.jpg" height="100" width="100">
 
-<img src="https://user-images.githubusercontent.com/33893807/169541589-8545d677-d04a-447d-9980-c1eedd67d61d.jpg" height="100">
+<img src="https://user-images.githubusercontent.com/33893807/169541589-8545d677-d04a-447d-9980-c1eedd67d61d.jpg" height="100" width="100">
 
-<img src="https://user-images.githubusercontent.com/33893807/169541615-a45431ef-ad60-43b8-a376-266b1ce99fce.jpg" height="100">
+<img src="https://user-images.githubusercontent.com/33893807/169541615-a45431ef-ad60-43b8-a376-266b1ce99fce.jpg" height="100" width="100">
 # maidinkenya
